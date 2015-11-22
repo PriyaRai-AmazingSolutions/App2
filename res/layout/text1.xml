@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <EditText
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:hint="Username"
+       android:layout_gravity="center"
+       android:id="@+id/etTxt"
+       />
+   <EditText
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:password="true"
+       android:hint="Password"
+       android:layout_gravity="center"
+       android:id="@+id/etPass"
+       />
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="100"
+       android:orientation="horizontal"
+       >
+  <Button
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="20"
+      android:text="Try Me"
+      android:id="@+id/button1"
+      />
+  <ToggleButton
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:checked="true"
+      android:layout_weight="80"
+      android:paddingBottom="2dp"
+       android:id="@+id/tbpass"
+     
+      />
+  </LinearLayout>
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Invalid"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:id="@+id/tvRes"
+      />
+</LinearLayout>
